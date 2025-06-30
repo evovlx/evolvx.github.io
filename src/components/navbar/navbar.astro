@@ -30,6 +30,11 @@ const menuitems = [
     title: "Contact Us",
     path: "/contact",
     type: "contactus"
+  },
+  {
+    title: "Capability Statement",
+    path: "/download/evolvx-capability-statement.pdf",
+    type: "capabilitystatement"
   }
 ];
 ---
@@ -81,6 +86,22 @@ const menuitems = [
                         class="btn-bg-color bfocus:outline-none shadow rounded-lg text-white font-semibold px-4 py-1.5 text-center"
                       >
                         Contact us
+                      </button>
+                    </a>
+                  </li>
+                )}
+                {item.type === "capabilitystatement" && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex lg:px-2 py-2 items-center text-gray-900 hover:text-gray-900"
+                      download="evolvx-capability-statement.pdf"
+                    >
+                      <button
+                        type="button"
+                        class="btn-bg-color bfocus:outline-none shadow rounded-lg text-white font-semibold px-4 py-1.5 text-center"
+                      >
+                        Download
                       </button>
                     </a>
                   </li>
