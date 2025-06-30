@@ -65,7 +65,7 @@ const menuitems = [
                   />
                 )}
 
-                {!item.children && item.type != "contactus" && (
+                {!item.children && item.type != "contactus" && item.type != "capabilitystatement" && (
                   <li>
                     <a
                       href={item.path}
